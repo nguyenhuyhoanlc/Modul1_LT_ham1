@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function test() {
+        let b = [];
+        let total =0;
+        let index =0;
+        do {
+            let a = parseFloat(prompt("Nhap so :"));
+            b.push(a);
+            tt = prompt("Ban co muon tiep tuc hay khong: (C/K)");
+        }
+        while (tt === "c" || tt === "C") ;
+        let max = b[0];
+        for (let i = 0; i < b.length; i++) {
+            total += b[i]
+            if (b[i] > max){
+                max = b[i];
+                index = i;
+            }
+        }
+        document.write(max);
+        document.write("Trung binh :" + total/b.length);
+    }
+    test()
+</script>
+</body>
+</html>

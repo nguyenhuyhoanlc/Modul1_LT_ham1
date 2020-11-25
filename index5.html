@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let b = [];
+    do {
+        let a = parseFloat(prompt("Nhap so :"));
+        let index = 0;
+        b.push(a);
+        tt = prompt("Ban co muon tiep tuc: (C/K)");
+    } while (tt === "c" || tt ==="C");
+        for (let i = 0; i <b.length ; i++) {
+            if (b[i]<0){
+                index = i;
+                alert("Vi tri so nguyen am :" + index +",");
+            }
+    }
+</script>
+</body>
+</html>

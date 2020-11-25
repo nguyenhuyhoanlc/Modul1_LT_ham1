@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let b=[];
+    do {
+        let a = prompt("Nhap ky tu");
+        b.push(a);
+        tt = prompt("Ban co muon tiep tuc hay khong (C/K)");
+    }while (tt ==="c" || tt==="C");
+    let count=0
+    let c= prompt("Nhap V")
+    for (let i = 0; i < b.length ; i++) {
+        if (b[i] === c) {
+            count++
+        }
+    }
+    if (count > 0){
+        document.write("V is in the arry");
+    } else {
+        document.write("V is not in the arry");
+    }
+</script>
+</body>
+</html>

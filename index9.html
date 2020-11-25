@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let arr1 =[];
+    let tt;
+    do {
+        let a = prompt("Nhap ky tu 1:");
+        arr.push(a);
+        tt = prompt("Ban co muon tiep tuc hay khong? (C/K)");
+    } while (tt === "c" || tt === "C");
+    do {
+        let b= prompt("Nhap ky tu 2 :");
+        arr1.push(b);
+        tt = prompt("Ban co muon tiep tuc hay khong? (C/K)");
+    } while (tt === "c" || tt ==="C");
+    let c = [];
+    let e = c.concat(arr,arr1);
+    document.write(e);
+</script>
+</body>
+</html>
